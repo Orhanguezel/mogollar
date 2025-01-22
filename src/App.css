@@ -1,6 +1,5 @@
 * {
   text-align: center;
-  background-color: #070707;
   color: aliceblue;
 }
 
@@ -18,9 +17,15 @@ span {
   color: #88041a;
 }
 
+
+
+
+
 @media (max-width: 480px) {
   h1 {
     font-size: 4rem;
   }
 
 }
+
+

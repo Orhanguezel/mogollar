@@ -6,7 +6,27 @@
     { "id": 2, "name": "Folk Rock" },
     { "id": 3, "name": "Psychedelic Rock" }
   ],
-  "url": "https://i.ytimg.com/vi/2n7MW8qFpBU/hqdefault.jpg",
+ "url": [
+  {
+    "id": 1,
+    "link": "https://img.piri.net/mnresize/900/-/resim/imagecrop/2020/04/09/12/54/resized_9234c-1011181e2.jpg",
+    "title": "Moğollar ile Anadolu Rock",
+    "description": "Moğollar'ın eşsiz melodileriyle dolu müzik dünyasına hoş geldiniz. Yeni albümleri keşfetmek ve geçmişin izlerini taşımak için buradayız."
+  },
+  {
+    "id": 2,
+    "link": "https://c.files.bbci.co.uk/DB55/production/_115994165_mogollar_mt-4.jpg",
+    "title": "Unutulmaz Melodiler",
+    "description": "Türk müziği ile rock'ı harmanlayan Moğollar'ın, geçmişten günümüze en iyi eserlerini keşfedin."
+  },
+  {
+    "id": 3,
+    "link": "https://i.ytimg.com/vi/2n7MW8qFpBU/hqdefault.jpg",
+    "title": "Efsane Konserler",
+    "description": "Moğollar'ın unutulmaz konserlerinden bir kare. Bu büyülü atmosferi yeniden yaşayın."
+  }
+],
+
   "members": [
     {
       "id": 1,
@@ -14,8 +34,9 @@
       "role": "Gitar",
       "description": "Moğollar'ın kurucu üyelerinden biri ve bağlama, gitar gibi enstrümanları çalan önemli bir müzisyen.",
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e4/Cahit_Berkay.jpg",
-        "https://pbs.twimg.com/media/EyHzXBIXIAAaDnU.jpg"
+        "https://image.hurimg.com/i/hurriyet/75/750x422/55eac15cf018fbb8f894a312.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKyn50ZEFgY1GiFJSSPb-tBbtq_vG2sg6fuQ&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzb-8NtedXqDr9ccRO7Ci7AdZC6-OzwZWSQg&s"
       ],
       "videos": [
         "https://www.youtube.com/watch?v=FwXYQmy6Rd8",
@@ -35,6 +56,32 @@
         "https://www.youtube.com/watch?v=kAYafDypF3k",
         "https://www.youtube.com/watch?v=GzUmVDw5ix8"
       ]
+    },
+    {
+      "id": 3,
+      "name": "Engin Yörükoğlu",
+      "role": "Davul",
+      "description": "Moğollar'ın kurucu üyelerinden biri ve grubun ritmik yapısına katkı sağlayan davulcusu.",
+      "images": ["https://www.moğollar.com.tr/uploads/engin.jpg"],
+      "videos": ["https://www.youtube.com/watch?v=7kYttAw9waU"]
+    },
+    {
+      "id": 4,
+      "name": "Serhat Ersöz",
+      "role": "Klavye",
+      "description": "Moğollar'da klavye çalan ve grubun müziğine modern bir dokunuş katan sanatçı.",
+      "images": ["https://www.moğollar.com.tr/uploads/serhat.jpg"],
+      "videos": ["https://www.youtube.com/watch?v=3FbTbvS1P8U"]
+    },
+    {
+      "id": 5,
+      "name": "Erdal Kızılçay",
+      "role": "Vokal ve Çeşitli Enstrümanlar",
+      "description": "Grubun çeşitli dönemlerinde yer alan ve çok yönlü müzikal yetenekleriyle bilinen bir üyesi.",
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/ea/Erdal_K%C4%B1z%C4%B1l%C3%A7ay.jpg"
+      ],
+      "videos": ["https://www.youtube.com/watch?v=WpJhZ7oRS8Y"]
     }
   ],
   "albums": [
@@ -57,24 +104,16 @@
           "title": "Halic'te Gün Batışı",
           "duration": "3:45",
           "url": "https://example.com/halicte-gun-batisi.mp3",
-          "images": [
-            "https://i.ytimg.com/vi/6Dp58OM06rw/maxresdefault.jpg"
-          ],
-          "videos": [
-            "https://www.youtube.com/watch?v=6Dp58OM06rw"
-          ]
+          "images": ["https://i.ytimg.com/vi/6Dp58OM06rw/maxresdefault.jpg"],
+          "videos": ["https://www.youtube.com/watch?v=6Dp58OM06rw"]
         },
         {
           "trackNumber": 2,
           "title": "Selvi Boylum Al Yazmalım",
           "duration": "4:10",
           "url": "https://example.com/selvi-boylum-al-yazmalim.mp3",
-          "images": [
-            "https://i.ytimg.com/vi/6a6Hkjvi-1g/hqdefault.jpg"
-          ],
-          "videos": [
-            "https://www.youtube.com/watch?v=6a6Hkjvi-1g"
-          ]
+          "images": ["https://i.ytimg.com/vi/6a6Hkjvi-1g/hqdefault.jpg"],
+          "videos": ["https://www.youtube.com/watch?v=6a6Hkjvi-1g"]
         }
       ]
     },
@@ -97,24 +136,66 @@
           "title": "Yalnızlar Rıhtımı",
           "duration": "3:20",
           "url": "https://example.com/yalnizlar-rihtimi.mp3",
-          "images": [
-            "https://i.ytimg.com/vi/aNzTDQ6r77I/maxresdefault.jpg"
-          ],
-          "videos": [
-            "https://www.youtube.com/watch?v=aNzTDQ6r77I"
-          ]
+          "images": ["https://i.ytimg.com/vi/aNzTDQ6r77I/maxresdefault.jpg"],
+          "videos": ["https://www.youtube.com/watch?v=aNzTDQ6r77I"]
         },
         {
           "trackNumber": 2,
           "title": "Bir Şehrin Hikayesi",
           "duration": "4:00",
           "url": "https://example.com/bir-sehrin-hikayesi.mp3",
-          "images": [
-            "https://i.ytimg.com/vi/fwLrCQphEQE/hqdefault.jpg"
-          ],
-          "videos": [
-            "https://www.youtube.com/watch?v=fwLrCQphEQE"
-          ]
+          "images": ["https://i.ytimg.com/vi/fwLrCQphEQE/hqdefault.jpg"],
+          "videos": ["https://www.youtube.com/watch?v=fwLrCQphEQE"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Umut Yolunu Bulur",
+      "year": 1993,
+      "description": "Moğollar'ın toplumsal mesajlar içeren eserlerinin yer aldığı albüm.",
+      "images": ["https://example.com/umut-yolunu-bulur.jpg"],
+      "videos": ["https://www.youtube.com/watch?v=example"],
+      "tracks": [
+        {
+          "trackNumber": 1,
+          "title": "Umut",
+          "duration": "3:40",
+          "url": "https://example.com/umut.mp3",
+          "images": ["https://example.com/umut.jpg"],
+          "videos": ["https://www.youtube.com/watch?v=example"]
+        },
+        {
+          "trackNumber": 2,
+          "title": "Yol",
+          "duration": "4:30",
+          "url": "https://example.com/yol.mp3",
+          "images": ["https://example.com/yol.jpg"],
+          "videos": ["https://www.youtube.com/watch?v=example"]
+        },
+        {
+          "trackNumber": 3,
+          "title": "Aşk ve Barış",
+          "duration": "5:10",
+          "url": "https://example.com/ask-ve-baris.mp3",
+          "images": ["https://example.com/ask-ve-baris.jpg"],
+          "videos": ["https://www.youtube.com/watch?v=example"]
+        },
+        {
+          "trackNumber": 4,
+          "title": "Doğa",
+          "duration": "4:50",
+          "url": "https://example.com/doga.mp3",
+          "images": ["https://example.com/doga.jpg"],
+          "videos": ["https://www.youtube.com/watch?v=example"]
+        },
+        {
+          "trackNumber": 5,
+          "title": "Kardeşlik",
+          "duration": "3:55",
+          "url": "https://example.com/kardeslik.mp3",
+          "images": ["https://example.com/kardeslik.jpg"],
+          "videos": ["https://www.youtube.com/watch?v=example"]
         }
       ]
     }
