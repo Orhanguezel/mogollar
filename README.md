@@ -18,4 +18,7 @@ http://localhost:3000/genres
 http://localhost:3000/url
 http://localhost:3000/members
 http://localhost:3000/albums
-http://localhost:3000/navigation
+
+
+
+json-server --watch db.json
