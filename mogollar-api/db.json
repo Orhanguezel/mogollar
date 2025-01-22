@@ -1,0 +1,170 @@
+{
+  "bandName": "Moğollar",
+  "description": "Moğollar, 1967 yılında Türkiye'de kurulan ve Anadolu Rock müziğinin öncülerinden biri olarak kabul edilen bir müzik grubudur. Geleneksel Türk müziği ile rock müziğini harmanlayarak unutulmaz eserler üretmişlerdir.",
+  "genres": [
+    { "id": 1, "name": "Anadolu Rock" },
+    { "id": 2, "name": "Folk Rock" },
+    { "id": 3, "name": "Psychedelic Rock" }
+  ],
+  "url": "https://i.ytimg.com/vi/2n7MW8qFpBU/hqdefault.jpg",
+  "members": [
+    {
+      "id": 1,
+      "name": "Cahit Berkay",
+      "role": "Gitar",
+      "description": "Moğollar'ın kurucu üyelerinden biri ve bağlama, gitar gibi enstrümanları çalan önemli bir müzisyen.",
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/e4/Cahit_Berkay.jpg",
+        "https://pbs.twimg.com/media/EyHzXBIXIAAaDnU.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=FwXYQmy6Rd8",
+        "https://www.youtube.com/watch?v=xjAZBttZ2Nw"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Taner Öngür",
+      "role": "Bas Gitar",
+      "description": "Moğollar'ın bas gitaristi ve aynı zamanda gruba yenilikçi bir ruh katan sanatçılardan biri.",
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/2/27/Taner_%C3%96ng%C3%BCr.jpg",
+        "https://i.ytimg.com/vi/kAYafDypF3k/hqdefault.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=kAYafDypF3k",
+        "https://www.youtube.com/watch?v=GzUmVDw5ix8"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Serhat Ersöz",
+      "role": "Klavye",
+      "description": "Klavye çalarak Moğollar'ın müziğine farklı bir boyut katan sanatçı.",
+      "images": [
+        "https://i.ytimg.com/vi/LFAS7RcFi_M/maxresdefault.jpg",
+        "https://pbs.twimg.com/media/EWxH_VdWkAQhxZR.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=LFAS7RcFi_M",
+        "https://www.youtube.com/watch?v=kl_KhyebReI"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Kemal Küçükbakkal",
+      "role": "Davul",
+      "description": "Grubun davulcusu olarak ritim bölümünün temelini oluşturur.",
+      "images": [
+        "https://pbs.twimg.com/media/EpUxtftWMAAO4Uz.jpg",
+        "https://i.ytimg.com/vi/GIT3tVX70Ec/hqdefault.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=GIT3tVX70Ec",
+        "https://www.youtube.com/watch?v=EyPbJ5Z2k-Q"
+      ]
+    }
+  ],
+  "albums": [
+    {
+      "id": 1,
+      "title": "Anadolu Pop",
+      "year": 1973,
+      "description": "Moğollar'ın Anadolu Rock türünün en iyi örneklerinden biri olarak gösterilen albümü.",
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/tr/thumb/8/83/Anadolu_Pop.jpeg/220px-Anadolu_Pop.jpeg",
+        "https://i.discogs.com/ZnprKD2tmMcdXyysPOJD5F_LUSGAZPSg_MXZkIdOIQ4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzNDYx/MDQtMTQ4MDY5MTc0/OC03OTAwLmpwZWc.jpeg"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=6Dp58OM06rw",
+        "https://www.youtube.com/watch?v=6a6Hkjvi-1g"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Düm Tek",
+      "year": 2004,
+      "description": "Grubun modern dönem eserlerini içeren ve farklı müzik tarzlarını bir araya getirdiği albümü.",
+      "images": [
+        "https://i.ytimg.com/vi/aNzTDQ6r77I/maxresdefault.jpg",
+        "https://i.discogs.com/RjXtEnzqOaMcRnM13U4FMtuRixIoWPPoujMsWR6nlP4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4Njgw/ODItMTUyNTM5OTk2/Mi00Njk3LmpwZWc.jpeg"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=aNzTDQ6r77I",
+        "https://www.youtube.com/watch?v=fwLrCQphEQE"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Umut Yolunu Bulur",
+      "year": 2020,
+      "description": "Son dönem eserlerini barındıran ve grubun yıllar içindeki evrimini gösteren bir albüm.",
+      "images": [
+        "https://i.ytimg.com/vi/_Q6DfN9W9aA/maxresdefault.jpg",
+        "https://i.scdn.co/image/ab67616d0000b273af5b702e478d80044d56e3d1"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=_Q6DfN9W9aA",
+        "https://www.youtube.com/watch?v=Tfh20RHA2jA"
+      ]
+    }
+  ],
+  "navigation": [
+    {
+      "id": 1,
+      "title": "Gitar",
+      "path": "/gitar",
+      "content": "Gitar, Moğollar müziğinin en belirgin enstrümanlarından biridir. Cahit Berkay'ın eşsiz performansı grubun imzası haline gelmiştir.",
+      "images": [
+        "https://i.ytimg.com/vi/7Hl5WI8c2dM/hqdefault.jpg",
+        "https://pbs.twimg.com/media/D98iv_xWkAAOHy5.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=7Hl5WI8c2dM",
+        "https://www.youtube.com/watch?v=FWsyOWe7vTc"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Bas Gitar",
+      "path": "/bas-gitar",
+      "content": "Taner Öngür'ün bas gitarıyla katkısı, grubun müzik tarzını zenginleştiren temel unsurlardan biridir.",
+      "images": [
+        "https://i.ytimg.com/vi/X5eWk84hUEI/maxresdefault.jpg",
+        "https://pbs.twimg.com/media/E98bPUbWUAQIlR-.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=X5eWk84hUEI",
+        "https://www.youtube.com/watch?v=4aWe7AoBX1w"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Klavye",
+      "path": "/klavye",
+      "content": "Serhat Ersöz'ün klavyesi, Moğollar'ın modern ve yenilikçi müziğinin yapı taşlarından biridir.",
+      "images": [
+        "https://i.ytimg.com/vi/wPXav3gFk04/hqdefault.jpg",
+        "https://i.discogs.com/ZBZr5rxvRxw4SmDDAIKllHV76pqs35KiEhBf5Nj3b6Q/rs:fit/g:sm/q:90/h:450/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4Njgw/ODMtMTUyNTM5OTk2/Mi00Njk3LmpwZWc.jpeg"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=wPXav3gFk04",
+        "https://www.youtube.com/watch?v=bZmUcWWeU7k"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Davul",
+      "path": "/davul",
+      "content": "Kemal Küçükbakkal'ın güçlü davul ritimleri, grubun enerjik müziğine katkıda bulunur.",
+      "images": [
+        "https://i.ytimg.com/vi/WUPIU0wbZME/hqdefault.jpg",
+        "https://pbs.twimg.com/media/D7_AHExXkAEGnFZ.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=WUPIU0wbZME",
+        "https://www.youtube.com/watch?v=RQ8RDaT6qRo"
+      ]
+    }
+  ]
+}
