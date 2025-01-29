@@ -1,4 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import {
+  PageContainer,
+  GradientBackground,
+  GridContainer,
+} from "./StyledComponents"; 
+import { AnimatedImageWrapper, AnimatedGalleryImage } from "./GalleryStyles"; 
 
 function Gallery() {
   const [images, setImages] = useState([]);
@@ -13,15 +19,15 @@ function Gallery() {
       .then((data) => {
         const allImages = [];
 
-        // Albüm resimlerini ekle
-        data.forEach(album => {
+
+        data.forEach((album) => {
           if (album.images && album.images.length > 0) {
             allImages.push(...album.images);
           }
 
-          // Şarkı resimlerini ekle
+
           if (album.tracks && album.tracks.length > 0) {
-            album.tracks.forEach(track => {
+            album.tracks.forEach((track) => {
               if (track.images && track.images.length > 0) {
                 allImages.push(...track.images);
               }
@@ -35,16 +41,19 @@ function Gallery() {
   };
 
   return (
-    <div>
-      <h2>Gallery</h2>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '16px' }}>
+    <PageContainer>
+      <GradientBackground />
+      <GridContainer>
         {images.map((image, index) => (
-          <div key={index}>
-            <img src={image} alt={`Gallery item ${index + 1}`} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
-          </div>
+          <AnimatedImageWrapper key={index}>
+            <AnimatedGalleryImage
+              src={image}
+              alt={`Gallery item ${index + 1}`}
+            />
+          </AnimatedImageWrapper>
         ))}
-      </div>
-    </div>
+      </GridContainer>
+    </PageContainer>
   );
 }
 

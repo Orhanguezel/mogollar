@@ -1,6 +1,7 @@
 * {
-  text-align: center;
-  color: aliceblue;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,9 +14,7 @@ h1 {
   font-size: 8rem;
 }
 
-span {
-  color: #88041a;
-}
+
 
 
 

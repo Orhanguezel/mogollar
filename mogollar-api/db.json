@@ -32,6 +32,7 @@
       "id": 1,
       "name": "Cahit Berkay",
       "role": "Gitar",
+      "gif": "https://clipart-library.com/img/1939046.gif",
       "description": "Moğollar'ın kurucu üyelerinden biri ve bağlama, gitar gibi enstrümanları çalan önemli bir müzisyen.",
       "images": [
         "https://image.hurimg.com/i/hurriyet/75/750x422/55eac15cf018fbb8f894a312.jpg",
@@ -47,6 +48,7 @@
       "id": 2,
       "name": "Taner Öngür",
       "role": "Bas Gitar",
+      "gif": "https://giffiles.alphacoders.com/307/30780.gif",
       "description": "Moğollar'ın bas gitaristi ve aynı zamanda gruba yenilikçi bir ruh katan sanatçılardan biri.",
       "images": [
         "https://upload.wikimedia.org/wikipedia/commons/2/27/Taner_%C3%96ng%C3%BCr.jpg",
@@ -61,6 +63,7 @@
       "id": 3,
       "name": "Engin Yörükoğlu",
       "role": "Davul",
+      "gif": "https://i.pinimg.com/originals/d3/d3/0f/d3d30f80b1878a466afcac471a37d93f.gif",
       "description": "Moğollar'ın kurucu üyelerinden biri ve grubun ritmik yapısına katkı sağlayan davulcusu.",
       "images": ["https://www.moğollar.com.tr/uploads/engin.jpg"],
       "videos": ["https://www.youtube.com/watch?v=7kYttAw9waU"]
@@ -69,6 +72,7 @@
       "id": 4,
       "name": "Serhat Ersöz",
       "role": "Klavye",
+      "gif": "https://media2.giphy.com/media/l2QE2cRFgv4Atc5Py/200.gif?cid=6c09b952uq010v1nu7mmkgo32nnzdm6rnvf4i4teekwxvley&ep=v1_gifs_search&rid=200.gif&ct=g",
       "description": "Moğollar'da klavye çalan ve grubun müziğine modern bir dokunuş katan sanatçı.",
       "images": ["https://www.moğollar.com.tr/uploads/serhat.jpg"],
       "videos": ["https://www.youtube.com/watch?v=3FbTbvS1P8U"]
@@ -77,6 +81,7 @@
       "id": 5,
       "name": "Erdal Kızılçay",
       "role": "Vokal ve Çeşitli Enstrümanlar",
+      "gif": "https://cdn.pixabay.com/animation/2024/06/09/21/28/21-28-23-997_512.gif",
       "description": "Grubun çeşitli dönemlerinde yer alan ve çok yönlü müzikal yetenekleriyle bilinen bir üyesi.",
       "images": [
         "https://upload.wikimedia.org/wikipedia/commons/e/ea/Erdal_K%C4%B1z%C4%B1l%C3%A7ay.jpg"
@@ -91,8 +96,8 @@
       "year": 1973,
       "description": "Moğollar'ın Anadolu Rock türünün en iyi örneklerinden biri olarak gösterilen albümü.",
       "images": [
-        "https://upload.wikimedia.org/wikipedia/tr/thumb/8/83/Anadolu_Pop.jpeg/220px-Anadolu_Pop.jpeg",
-        "https://i.discogs.com/ZnprKD2tmMcdXyysPOJD5F_LUSGAZPSg_MXZkIdOIQ4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzNDYx/MDQtMTQ4MDY5MTc0/OC03OTAwLmpwZWc.jpeg"
+        "https://data.opus3a.com/product_photo/38/3897b5ef3a151a6643a4109578717767/MAX/b9283497487f3abd3799967d7c61338d.jpg",
+        "https://rockefsaneleri.wordpress.com/wp-content/uploads/2012/02/mogollar.jpg"
       ],
       "videos": [
         "https://www.youtube.com/watch?v=6Dp58OM06rw",
@@ -104,7 +109,7 @@
           "title": "Halic'te Gün Batışı",
           "duration": "3:45",
           "url": "https://example.com/halicte-gun-batisi.mp3",
-          "images": ["https://i.ytimg.com/vi/6Dp58OM06rw/maxresdefault.jpg"],
+          "images": ["https://i.ytimg.com/vi/NZHQbDB80CU/maxresdefault.jpg"],
           "videos": ["https://www.youtube.com/watch?v=6Dp58OM06rw"]
         },
         {

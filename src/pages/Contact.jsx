@@ -1,50 +1,152 @@
-import React from 'react';
+import {
+  PageContainer,
+  GradientBackground,
+  
+  SectionTitle,
+  
+} from "./StyledComponents";
+
+import {
+  ContactWrapper,
+  ContactCard,
+  StyledAnchor,
+  StyledStrong,
+  StyledListItem,
+  StyledList,
+  ContactText,
+  Form,
+  Label,
+} from "./ContactStyles";
+
+import { motion } from "framer-motion";
 
 function Contact() {
+  const cardVariants = {
+    hidden: (direction) => ({
+      opacity: 0,
+      x: direction === "right" ? 300 : -300,
+    }),
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-      <h2 style={{ textAlign: 'center', color: '#D12727' }}>Contact Us</h2>
-      <p style={{ textAlign: 'center' }}>
-        We’d love to hear from you! Feel free to reach out through any of the following methods.
-      </p>
+    <PageContainer>
+      <GradientBackground />
+      <ContactText>
+        We’d love to hear from you! Feel free to reach out through any of the
+        following methods.
+      </ContactText>
 
-      <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-        <h3>Contact Information</h3>
-        <ul style={{ listStyleType: 'none', padding: 0 }}>
-          <li><strong>Email:</strong> <a href="mailto:info@mogollar.com">info@mogollar.com</a></li>
-          <li><strong>Phone:</strong> +90 212 555 1234</li>
-          <li><strong>Address:</strong> Istiklal Street, No: 123, Istanbul, Turkey</li>
-        </ul>
+      <ContactWrapper>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          custom="right"
+          variants={cardVariants}
+        >
+          <ContactCard>
+            <SectionTitle>Contact Information</SectionTitle>
+            <StyledList>
+              <StyledListItem>
+                <StyledStrong>Email:</StyledStrong>{" "}
+                <StyledAnchor href="mailto:info@mogollar.com">
+                  info@mogollar.com
+                </StyledAnchor>
+              </StyledListItem>
+              <StyledListItem>
+                <StyledStrong>Phone:</StyledStrong> +90 212 555 1234
+              </StyledListItem>
+              <StyledListItem>
+                <StyledStrong>Address:</StyledStrong> Istiklal Street, No: 123,
+                Istanbul, Turkey
+              </StyledListItem>
+            </StyledList>
+          </ContactCard>
+        </motion.div>
 
-        <h3>Follow Us</h3>
-        <ul style={{ listStyleType: 'none', padding: 0 }}>
-          <li><a href="https://www.facebook.com/mogollar" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-          <li><a href="https://www.twitter.com/mogollar" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-          <li><a href="https://www.instagram.com/mogollar" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        </ul>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          custom="left"
+          variants={cardVariants}
+        >
+          <ContactCard>
+            <SectionTitle>Follow Us</SectionTitle>
+            <StyledList>
+              <StyledListItem>
+                <StyledAnchor
+                  href="https://www.facebook.com/mogollar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </StyledAnchor>
+              </StyledListItem>
+              <StyledListItem>
+                <StyledAnchor
+                  href="https://www.twitter.com/mogollar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </StyledAnchor>
+              </StyledListItem>
+              <StyledListItem>
+                <StyledAnchor
+                  href="https://www.instagram.com/mogollar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </StyledAnchor>
+              </StyledListItem>
+            </StyledList>
+          </ContactCard>
+        </motion.div>
 
-        <h3>Send Us a Message</h3>
-        <form style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-          <label>
-            <span>Name:</span>
-            <input type="text" name="name" style={{ width: '100%', padding: '8px', marginTop: '5px' }} />
-          </label>
-          <label>
-            <span>Email:</span>
-            <input type="email" name="email" style={{ width: '100%', padding: '8px', marginTop: '5px' }} />
-          </label>
-          <label>
-            <span>Message:</span>
-            <textarea name="message" rows="5" style={{ width: '100%', padding: '8px', marginTop: '5px' }}></textarea>
-          </label>
-          <button type="submit" style={{ padding: '10px', backgroundColor: '#D12727', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
-            Send
-          </button>
-        </form>
-      </div>
-    </div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          custom="right"
+          variants={cardVariants}
+        >
+          <ContactCard>
+            <SectionTitle>Send Us a Message</SectionTitle>
+            <Form>
+              <Label>
+                <span>Name:</span>
+                <input type="text" name="name" placeholder="Enter your name" />
+              </Label>
+              <Label>
+                <span>Email:</span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+              </Label>
+              <Label>
+                <span>Message:</span>
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Write your message"
+                ></textarea>
+              </Label>
+              <button type="submit">Send</button>
+            </Form>
+          </ContactCard>
+        </motion.div>
+      </ContactWrapper>
+    </PageContainer>
   );
 }
 
 export default Contact;
-

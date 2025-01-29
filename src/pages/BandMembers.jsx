@@ -1,4 +1,19 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import {
+  PageContainer,
+  GradientBackground,
+  MemberCard,
+  MemberName,
+  MemberRole,
+  MemberDescription,
+} from "./StyledComponents";
+import {
+  ImageWrapper,
+  GifWrapper,
+  VideoWrapper,
+  LoadingMessage,
+} from "./BandMembersStyles";
 
 function BandMembers() {
   const [members, setBandMembers] = useState([]);
@@ -19,48 +34,80 @@ function BandMembers() {
       .catch((error) => console.error("Members API not found", error));
   };
 
+  const cardVariants = {
+    hidden: (index) => ({
+      opacity: 0,
+      x: index % 2 === 0 ? -200 : 200,
+    }),
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.8,
+      },
+    },
+  };
+
   return (
-    <div>
-      <h2>Band Members</h2>
-      <ul>
-        {members.length > 0 ? (
-          members.map((member) => (
-            <li key={member.id}>
-              <p>{member.name}</p>
-              <p>{member.role}</p>
-              <p>{member.description}</p>
+    <PageContainer>
+      <GradientBackground />
+      {members.length > 0 ? (
+        members.map((member, index) => (
+          <motion.div
+            key={member.id}
+            custom={index}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={cardVariants}
+          >
+            <MemberCard>
+              <MemberName>{member.name}</MemberName>
+              {member.gif && (
+                <GifWrapper>
+                  <img src={member.gif} alt={`${member.name} gif`} />
+                </GifWrapper>
+              )}
+              <MemberRole>{member.role}</MemberRole>
+              <MemberDescription>{member.description}</MemberDescription>
 
-              {/* images dizisi varsa ve 2. öğe mevcutsa göster */}
-              {member.images && member.images[1] && (
-                <img src={member.images[1]} alt={`${member.name} image`} />
+              {member.images && member.images.length > 0 && (
+                <ImageWrapper>
+                  {member.images.map((image, idx) => (
+                    <img
+                      key={idx}
+                      src={image}
+                      alt={`${member.name} - Image ${idx + 1}`}
+                    />
+                  ))}
+                </ImageWrapper>
               )}
 
-              {/* videos dizisi varsa öğeleri göster */}
+              {/* Videolar */}
               {member.videos && member.videos.length > 0 && (
-                <>
-                  {member.videos[0] && (
-                    <video src={member.videos[0]} controls>
+                <VideoWrapper>
+                  {member.videos.map((video, idx) => (
+                    <video key={idx} controls>
+                      <source src={video} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
-                  )}
-                  {member.videos[1] && (
-                    <video src={member.videos[1]} controls>
-                      Your browser does not support the video tag.
-                    </video>
-                  )}
-                </>
+                  ))}
+                </VideoWrapper>
               )}
-
-              <hr />
-            </li>
-          ))
-        ) : (
-          <p>No members found</p>
-        )}
-      </ul>
-    </div>
+            </MemberCard>
+          </motion.div>
+        ))
+      ) : (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <LoadingMessage>No members found</LoadingMessage>
+        </motion.div>
+      )}
+    </PageContainer>
   );
 }
 
 export default BandMembers;
-
